@@ -6,10 +6,9 @@ first = True
 for line in lines:
 	if first:
 		first = False
-		continue
 	else:
 		if int(line) > depth:
 			sum += 1
-		depth = int(line)
+	depth = int(line)
 		
 print("Answer: " + str(sum))
